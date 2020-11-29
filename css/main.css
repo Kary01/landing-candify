@@ -66,12 +66,42 @@ header .header__nav .header__nav--list .active {
 }
 
 main {
+  padding: 3em 4em;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
   background-color: #FFFADF;
+}
+
+main .main--description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+main .main--description .main--name {
+  margin-bottom: 4em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: coral;
+  text-decoration: none;
+}
+
+main .main--description .main--title {
+  margin-bottom: .5em;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+main .main--description .main--copy {
+  font-size: 1.2rem;
 }
 
 section.nom {
@@ -86,6 +116,23 @@ section.yum {
   -ms-grid-column: 2;
   grid-area: yum;
   background-color: #202020;
+}
+
+section.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
 }
 
 section.candy {
@@ -105,5 +152,22 @@ footer {
   -ms-grid-column-span: 2;
   grid-area: footer;
   background-color: #333333;
+}
+
+footer.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #8d8d8d;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
 }
 /*# sourceMappingURL=main.css.map */

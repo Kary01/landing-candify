@@ -55,10 +55,34 @@ header .header__nav .header__nav--list .active {
 }
 
 main {
+  padding: 3em 4em;
   grid-area: main;
   background-color: #FFFADF;
 }
 
+main .main--description {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+main .main--description .main--name {
+  margin-bottom: 4em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: coral;
+  text-decoration: none;
+}
+
+main .main--description .main--title {
+  margin-bottom: .5em;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+main .main--description .main--copy {
+  font-size: 1.2rem;
+}
 section.nom {
   grid-area: nom;
   background-color: #C4B35A;
@@ -67,6 +91,17 @@ section.nom {
 section.yum {
   grid-area: yum;
   background-color: #202020;
+}
+
+section.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
 }
 
 section.candy {
@@ -82,3 +117,13 @@ footer {
   background-color: #333333;
 }
 
+footer.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(141, 141, 141);
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
