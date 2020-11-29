@@ -35,6 +35,7 @@ header .header__nav .header__nav--list{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1em;
   padding: 1em;
   text-align: center;
   list-style: none;
@@ -126,4 +127,29 @@ footer.card{
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 768px){
+  .grid--container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 2fr 1fr;
+    grid-template-areas: "header header"
+                        "main candy"
+                        "nom candy"
+                        "yum candy"
+                        "footer footer";
+  }
+}
+
+@media screen and (max-width: 425px){
+  .grid--container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr 2fr 2fr 1fr;
+    grid-template-areas: "header"
+                        "main"
+                        "candy"
+                        "nom"
+                        "yum"
+                        "footer";
+  }
 }
