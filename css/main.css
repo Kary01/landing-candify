@@ -1,3 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  width: 100%;
+  height: 100vh;
+}
 
+.grid--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2fr 1.5fr;
+      grid-template-columns: 1fr 1.2fr 1.5fr;
+  -ms-grid-rows: 1fr 4fr 3fr 2fr;
+      grid-template-rows: 1fr 4fr 3fr 2fr;
+      grid-template-areas: "main main header" "main main candy" "nom yum candy" "footer footer candy";
+  height: 100vh;
+  margin: 2em;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: header;
+  background-color: #FFF;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  background-color: #FFFADF;
+}
+
+section.nom {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nom;
+  background-color: #C4B35A;
+}
+
+section.yum {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: yum;
+  background-color: #202020;
+}
+
+section.candy {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: candy;
+  background-image: url("https://images.unsplash.com/photo-1575224300306-1b8da36134ec?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: #333333;
+}
 /*# sourceMappingURL=main.css.map */
